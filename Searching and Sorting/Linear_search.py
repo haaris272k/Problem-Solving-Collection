@@ -1,4 +1,4 @@
-""
+"""
 
 Write a program to implement Linear Search
 
@@ -10,6 +10,7 @@ Element x is present at index 6
 
 
 """
+
 a = list(map(int, input().split()))
 k = int(input("Enter the num "))
 if k in a:
