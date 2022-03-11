@@ -19,7 +19,6 @@ def problem(n, k):
         if n % i == 0:
             fact.append(i)
     print(fact)
-    lar = []
     if len(fact) < k:
         return 1
     else:
