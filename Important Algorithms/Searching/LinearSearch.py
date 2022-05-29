@@ -21,7 +21,6 @@ for i in range(n):
 if k in a:
 
     print(a.index(k))
-
 else:
 
     print("Not found")
