@@ -1,6 +1,9 @@
-"""Implement the Selection Sort algorithm"""
+# Selection Sort
+# Uses In-place algorithm
+# Time complexity: O(n^2)
+# Space complexity: O(1)
 
-# TC : O(n^2)
+
 def SelectionSort(arr, n):
     for i in range(n):
         for j in range(i + 1, n):
