@@ -33,6 +33,8 @@ for i in range(m):
     subarray.sort()
     subarrays.append(subarray)
 
+print(subarrays)
+
 # Checking the difference between consecutive elements of the subarrays
 for i in subarrays:
     for j in range(len(i) - 1):
