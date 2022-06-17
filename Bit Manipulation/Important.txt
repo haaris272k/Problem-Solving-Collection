@@ -1,0 +1,9 @@
+
+
+# Function to convert decimal to binary number
+
+bin(n)
+Output will be in the form : 0b1, 0b0, etc
+so replace 0b with ''
+output will be something like : 1, 0, 1, 0, 1, 0, 1, 0
+
