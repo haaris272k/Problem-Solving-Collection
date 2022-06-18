@@ -21,12 +21,13 @@ to_bin = bin(num).replace("0b", "")
 # converting to list of ints for easier manipulation to find complement
 # Finding the complement of the number
 to_lst = [int(i) for i in to_bin]
+print(to_lst)
 for i in range(len(to_lst)):
     if to_lst[i] == 1:
         to_lst[i] = 0
     else:
         to_lst[i] = 1
-
+print(to_lst)
 # converting back to string to find decimal value
 to_str = "".join(str(i) for i in to_lst)
 
