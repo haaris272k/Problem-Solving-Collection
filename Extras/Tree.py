@@ -81,11 +81,12 @@ class TreeNode:
             return []
 
 
-root = TreeNode(10)
-root.left = TreeNode(34)
-root.left.left = TreeNode(45)
-root.right = TreeNode(89)
-root.left.right = TreeNode(50)
+root = TreeNode(1)
+root.left = TreeNode(3)
+root.left.left = TreeNode(5)
+root.right = TreeNode(4)
+root.right.left = TreeNode(2)
+root.left.right = TreeNode(6)
 print("Inorder traversal: ")
 TreeNode.inorder(root)
 print("\n")
