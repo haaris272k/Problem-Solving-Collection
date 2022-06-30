@@ -11,6 +11,9 @@ Output: ["i","love"]
 Explanation: "i" and "love" are the two most frequent words.
 Note that "i" comes before "love" due to a lower alphabetical order."""
 
+import heapq
+
+
 words = ["i", "love", "leetcode", "i", "love", "coding"]
 k = 2
 
@@ -26,8 +29,11 @@ for i in words:
         FreqMap[i] = 1
 
 ans = sorted(FreqMap.items(), key=lambda x: (-x[1], x[0]))
-
-
 for i in range(k):
     final_ans.append(ans[i][0])
 print(final_ans)
+
+# Alternative solution using heapq
+# Line 28 to 31 could be replaced with:
+ans = heapq.nlargest(k, FreqMap, key=FreqMap.get)
+print(ans)
