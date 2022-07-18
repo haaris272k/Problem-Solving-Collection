@@ -8,14 +8,14 @@ nums = [1000, 2000, 30, 20, 10]
 
 
 heapq.heapify(nums)
-print("Converted to heap",nums)
+print("Converted to heap", nums)
 
 # pushing new element to heap
 # will be pushed to the start of the heap (on right side)
 
 
 heapq.heappush(nums, 40)
-print("Pushed new element to heap",nums)
+print("Pushed new element to heap", nums)
 
 
 # popping the element from heap
@@ -24,20 +24,18 @@ print("Pushed new element to heap",nums)
 
 
 pooped_ele = heapq.heappop(nums)
-print("Popped element is",pooped_ele)")
-print("Popped element from heap",nums)
+print("Popped element is", pooped_ele)
+print("Popped element from heap", nums)
 
 # to find kth smallest element in the heap
 
 
 let_k = 3
 kth_smallest_ele = heapq.nsmallest(let_k, nums)
-print("Kth smallest element is",kth_smallest_ele)
+print("Kth smallest element is", kth_smallest_ele)
 
 # to find kth largest element in the heap
 
 
 kth_largest_ele = heapq.nlargest(let_k, nums)
-print("Kth largest element is",kth_largest_ele)
-
-
+print("Kth largest element is", kth_largest_ele)
