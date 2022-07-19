@@ -16,14 +16,17 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 """
 
 
-def twosum(a, target):
+def twosum_map(a, target):
+    d = {}
+    c = 0
     for i in range(len(a)):
-        for j in range(i + 1, len(a)):
-            if a[i] + a[j] == target:
-                print(i, j)
-                break
+        if target - a[i] in d:
+            print(d[target - a[i]], i)
+            c += 1
+        d[a[i]] = i
+    return ""
 
 
-a = list(map(int, input().strip().split()))
-target = int(input())
-print(twosum(a, target))
+a = [2, 7, 11, 15, 8, 1]
+target = 9
+print(twosum_map(a, target))
