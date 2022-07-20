@@ -7,7 +7,6 @@ Return the final string after all such duplicate removals have been made. It can
  
 
 Example 1:
-
 Input: s = "abbaca"
 Output: "ca"
 Explanation: 
