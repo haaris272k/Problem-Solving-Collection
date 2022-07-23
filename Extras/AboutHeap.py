@@ -36,6 +36,5 @@ print("Kth smallest element is", kth_smallest_ele)
 
 # to find kth largest element in the heap
 
-
 kth_largest_ele = heapq.nlargest(let_k, nums)
 print("Kth largest element is", kth_largest_ele)
