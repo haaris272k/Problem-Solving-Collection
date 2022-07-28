@@ -10,7 +10,7 @@ the function should return -1.
 
 Example:
 
-Input1: my name is ranary
+Input1: my name is ganary
 
 Input2: a
 
