@@ -17,6 +17,8 @@ elements after it (2+2). """
 
 A = [11, 12111, 3, 11]
 N = len(A)
+
+# Approach 1: TC: O(n*n) SC: O(1)
 ind = []
 if len(A) == 1:
     print(A[0])
@@ -29,3 +31,22 @@ if ind:
     print(ind[0])
 else:
     print(False)
+
+# Approach 2: TC: O(n) SC: O(1)
+# The idea is to get the total sum of the array first.
+# Then Iterate through the array and keep updating the left sum which is initialized as zero
+# In the loop, we can get the right sum by subtracting the elements one by one.
+
+
+def equili(A):
+    totalsum = sum(A)  # total sum of all elements
+    leftsum = 0  # sum of elements from 0 to i
+    for i in range(N):
+        totalsum -= A[i]  # subtract the current element from total sum
+        if leftsum == totalsum:
+            return "YES"
+        leftsum += A[i]
+    return "NO"
+
+
+print(equili(A))
