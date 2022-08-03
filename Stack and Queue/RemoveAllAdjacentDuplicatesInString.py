@@ -16,7 +16,7 @@ of which only "aa" is possible,
 so the final string is "ca"."""
 
 
-s = "abbaca"
+s = "abccbccba"
 stack = [None] * len(s)
 for i in s:
     if stack[-1] == i:
