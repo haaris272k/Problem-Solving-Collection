@@ -15,14 +15,18 @@ S = "aabbba"
 S = list(S)  # convert string to list to make use of propery of stack
 string = ""  # string to which non adjacent characters will be added
 for i in range(len(S)):
+
     # pop the last element from the stack
     ele = S.pop()
+
     # if the last element in the string is the same as the current element in the stack
     # Do nothing
     if string and string[-1] == ele:
         pass
+
     else:
         # if the last element in the string is not the same as the current
         # element in the string then add the current element to the string
         string += ele
+
 print(string)
