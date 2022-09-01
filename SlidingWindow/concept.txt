@@ -1,0 +1,9 @@
+# concept of sliding window
+
+while end<len(array/string)
+    # 1-> perform some operation (usually precomputation)
+    # if end-start+1 == k
+        # 2-> Find the answer from the calculation
+        # 3-> slide the window
+    # else
+    # end += 1 (increase the window size)
