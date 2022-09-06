@@ -13,7 +13,7 @@ Output: [2,3]
 
 
 """
-
+# similar to (find duplicates in an array)
 from collections import Counter
 
 nums = [4, 3, 2, 7, 8, 2, 3, 1]
