@@ -1,6 +1,6 @@
 
-'''A Java Starter Template for competitive programming in CodeChef, Hackerrank, 
-etc w/ efficient coding rules and pre-designed pattern Ready to Use'''
+// A Java Starter Template for competitive programming in CodeChef, Hackerrank, 
+// etc w/efficient coding rules and pre-designed pattern Ready to Use
 
 /*
  * No package must be added here because some Online Judges don't support it
@@ -43,11 +43,11 @@ public class Main {
 			 * Logic of the program must be separated from the meta code to
 			 * increase readability and help debugging easier
 			 * Also note that Solver object is created inside for loop to
-			 * avoid multiple object creation that drastically increases 
+			 * avoid multiple object creation that drastically increases
 			 * execution time and memory usage
 			 */
 			Solver solver = new Solver();
-			for (int i = 0; i < cases; i++) {				
+			for (int i = 0; i < cases; i++) {
 				solver.solve(br.readLine());
 			}
 
@@ -60,21 +60,22 @@ public class Main {
 	}
 
 }
+
 /*
  * Some basic rules while coding in Programming Contests:
  * Try to follow at least 80% of them
-	Correctness
-		- final declaration for required data types
-		- avoid Object creation 
-		- Scanner slows down, use InputReader
-		- avoid too many static functions	
-	Efficiency
-		- use library functions as much as possible		
-		- assertEquals("RESULT", functionToCall())
-	Debugging-ability
-		- avoid too many global variables 
-		- Separate logic from meta-processing
-		- variable/function pneumonics must make sense
+ * Correctness
+ * - final declaration for required data types
+ * - avoid Object creation
+ * - Scanner slows down, use InputReader
+ * - avoid too many static functions
+ * Efficiency
+ * - use library functions as much as possible
+ * - assertEquals("RESULT", functionToCall())
+ * Debugging-ability
+ * - avoid too many global variables
+ * - Separate logic from meta-processing
+ * - variable/function pneumonics must make sense
  * 
  */
 class Solver {
@@ -83,9 +84,9 @@ class Solver {
 	 * Logic goes here ...
 	 * Add to the global variables after processing the input
 	 * Maybe reverse a string or parse to an integer or , etc.
-	 */	
-	public void solve(String input) {					
-		Main.output.concat(input);	
+	 */
+	public void solve(String input) {
+		Main.output.concat(input);
 	}
 
 }
