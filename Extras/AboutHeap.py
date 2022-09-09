@@ -6,7 +6,7 @@ nums = [1000, 2000, 30, 20, 10]
 # converting list to heap
 # Note : by default the heap is min heap (Sorted in ascending order)
 
-
+print("Before heapify : ", nums)
 heapq.heapify(nums)
 print("Converted to heap", nums)
 
@@ -38,3 +38,11 @@ print("Kth smallest element is", kth_smallest_ele)
 
 kth_largest_ele = heapq.nlargest(let_k, nums)
 print("Kth largest element is", kth_largest_ele)
+
+"""
+Time complexity of all the max/min operations are -
+O(1) for push, pop, peek
+O(n) for heapify
+O(nlogn) for nsmallest, nlargest
+
+"""

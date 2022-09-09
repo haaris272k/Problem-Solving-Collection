@@ -1,47 +1,21 @@
-"""Implementation of tree in Python"""
-# initialize a class
-# Take 3 variables in the class one will be the root node and
-# the other two will be the left and right nodes
-# val/data will be the value of the node
-# to connect with the root
-# (a) first assign some value to the root node
-# (b) then connect like this: root.left = classname(some value)
-# (c) then connect like this: root.right = classname(some value)
-# we can keep on connecting like this: root.left.left = classname(some value) means
-# connect the left node of the left node of the root node
-# to access the value of the node
-# (a) first assign some value to the root node
-# (b) then access like this: root.val (Roots value)
-# (c) then access like this: root.left.val (value of left node of the root node)
-
-# ---------------------------Implementation---------------------------:
-
 """
-class TreeNode:
-    def __init__(self, data):
-        self.left = None
-        self.right = None
-        self.val = data
-
-
-root = TreeNode(4) # root node
-root.left = TreeNode(2) # left node of the root node
-root.right = TreeNode(3) # right node of the root node
-print(root.val)# 4  
-print(root.left.val)# 2
-print(root.right.val)
-
+There are three ways to traverse a tree:
+    1. Inorder
+    2. Preorder
+    3. Postorder
+    Inorder: Left, Root, Right
+    Preorder: Root, Left, Right
+    Postorder: Left, Right, Root
 """
 
-# --------------------------------------------------------------------:
 
 # Tree Traversal Algorithms
 
 
 class TreeNode:
     def __init__(self, data):
-        self.left = None
-        self.right = None
+        self.left = None  # for the root  the left node is none (initially)
+        self.right = None  # for the root the right node is none (initially)
         self.val = data
 
     # Inorder traversal
