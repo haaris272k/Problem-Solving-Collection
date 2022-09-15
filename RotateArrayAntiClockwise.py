@@ -10,9 +10,6 @@ d = 2
 # and elements from 0th idx to dth idx
 
 temp = []
-
 for i in range(len(arr)):
-
     temp = arr[d:] + arr[:d]
-
 print(temp)
