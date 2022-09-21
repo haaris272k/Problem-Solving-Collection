@@ -16,6 +16,9 @@ is a contiguous subarray."""
 # Brute Force Solution:
 # Our goal is to find the subarray with the maximum sum.
 # As we could easily see that It is less efficient
+from cmath import inf
+
+
 arr = [1, 2, 3, -2, 5]
 subarray = []
 for i in range(len(arr)):
@@ -31,10 +34,11 @@ print(
 # Kadane's Algorithm:
 # We can use Kadane's algorithm to find the subarray with the maximum sum,efficiently.
 # TC is O(n)
-maxi = arr[0]
-curr_maxi = arr[0]
-n = len(arr)
-for i in range(1, n):
-    curr_maxi = max(arr[i], curr_maxi + arr[i])
-    maxi = max(maxi, curr_maxi)
+maxi = -inf  # We can use -inf instead of -100000
+summ = 0
+for num in arr:
+    summ += num
+    maxi = max(maxi, summ)
+    if summ < 0:
+        summ = 0
 print(maxi)
