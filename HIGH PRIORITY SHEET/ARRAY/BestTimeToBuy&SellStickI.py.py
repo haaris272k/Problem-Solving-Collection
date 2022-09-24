@@ -37,10 +37,12 @@ ans = 0
 low, high = 0, 1
 
 while high < len(prices):
+
     # If the price is going down, we buy at the lowest price and sell at the highest price
     if prices[low] < prices[high]:
         ans = max(ans, prices[high] - prices[low])
         high += 1
+
     # If the price is going up, we buy at the lowest price and sell at the highest price
     # We also update the low pointer to the current high pointer
     # This is because we want to buy at the lowest price and sell at the highest price
