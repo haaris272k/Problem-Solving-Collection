@@ -25,6 +25,7 @@ for single_index in range(len(nums)):
 
 if c == 0:
     print([-1, -1])
+
 elif c == 1:
     ind = nums.index(target)
     print([ind, ind])
