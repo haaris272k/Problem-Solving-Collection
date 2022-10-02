@@ -29,6 +29,7 @@ my_stack = []
 for i in range(len(s)):
     if s[i] != "*":
         my_stack.append(s[i])
+
     else:
         my_stack.pop()
 
