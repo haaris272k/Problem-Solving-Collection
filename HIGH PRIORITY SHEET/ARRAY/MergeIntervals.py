@@ -13,15 +13,33 @@ Input: intervals = [[1,4],[4,5]]
 Output: [[1,5]]
 Explanation: Intervals [1,4] and [4,5] are considered overlapping."""
 
-intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
+# intervals = [[1, 3], [2, 6], [8, 10], [15, 18]]
+# # intervals.sort(key=lambda x: x[0])
+# intervals.sort()
+
+# merged = []
+
+# for interval in intervals:
+#     if len(merged) == 0 or merged[-1][1] < interval[0]:
+#         merged.append(interval)
+#     else:
+#         merged[-1][1] = max(merged[-1][1], interval[1])
+# print(merged)
+
+
+intervals = [[1, 3], [5, 6], [8, 10], [11, 13]]
 # intervals.sort(key=lambda x: x[0])
 intervals.sort()
 
 merged = []
-
+c_ = 0
 for interval in intervals:
     if len(merged) == 0 or merged[-1][1] < interval[0]:
         merged.append(interval)
+        # c_ += 1
     else:
         merged[-1][1] = max(merged[-1][1], interval[1])
+        c_ += 1
+
 print(merged)
+print(c_)
