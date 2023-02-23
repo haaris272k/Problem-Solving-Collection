@@ -11,6 +11,7 @@ def quicksort(arr):
                 less.append(ele)
             if ele > pivot:
                 greater.append(ele)
+        print(greater,less)
 
     return quicksort(less) + [pivot] + quicksort(greater)
 
