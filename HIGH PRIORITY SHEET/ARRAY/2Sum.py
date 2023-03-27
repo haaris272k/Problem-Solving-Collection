@@ -24,7 +24,10 @@ def twosum_map(a, target):
             print(d[target - a[i]], i)
             c += 1
         d[a[i]] = i
+        print(d)
     return ""
+
+
 
 
 a = [2, 7, 11, 15, 8, 1]

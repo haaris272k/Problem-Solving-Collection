@@ -36,9 +36,13 @@ print(
 # TC is O(n)
 maxi = -inf  # We can use -inf instead of -100000
 summ = 0
+a=arr[0]
 for num in arr:
     summ += num
     maxi = max(maxi, summ)
+    arr=num[:i]
     if summ < 0:
         summ = 0
 print(maxi)
+
+print(arr)
