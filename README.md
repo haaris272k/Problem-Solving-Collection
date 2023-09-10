@@ -1,8 +1,6 @@
 # Problem Solving Collection
 
-[![GitHub stars](https://img.shields.io/github/stars/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/network)
-[![GitHub license](https://img.shields.io/github/license/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/blob/main/LICENSE)
+![Problem Solving Collection](https://img.shields.io/badge/Problem-Solving-Collection.svg)
 
 A collection of coding solutions to various challenging problems from different coding platforms, including Leetcode, Codechef, GeeksforGeeks, and HackerRank. Solutions are primarily provided in Python, but you may also find solutions in C++ and Java.
 
@@ -51,8 +49,7 @@ Contributions from the coding community are welcomed and encouraged! Whether you
 Please provide a clear and concise description of your contribution in the pull request description. Be sure to adhere to our [code of conduct](CODE_OF_CONDUCT.md).
 
 ## License
+[![GitHub license](https://img.shields.io/github/license/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/blob/main/LICENSE)
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-[![GitHub issues](https://img.shields.io/github/issues/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/haaris272k/Problem-Solving-Collection.svg?style=flat-square)](https://github.com/haaris272k/Problem-Solving-Collection/pulls)
