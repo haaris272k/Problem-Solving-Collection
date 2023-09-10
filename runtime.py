@@ -1,3 +1,6 @@
+# This method could be used to find the runtime of your solution (for Python code).
+# You can use it to check the efficiency of your solutions.
+
 import time
 
 def measure_runtime(func, *args, **kwargs):
@@ -18,4 +21,3 @@ def measure_runtime(func, *args, **kwargs):
     runtime = end_time - start_time
     print(f"Runtime: {runtime:.6f} seconds")
     return result
-
