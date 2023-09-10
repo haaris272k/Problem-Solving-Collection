@@ -1,4 +1,4 @@
-
+# This Question was asked in Rakuten Singapore's OA
 # a word is well-structured if it:
 # 1. starts with a consonant
 # 2. does not contain two consecutive vowels
